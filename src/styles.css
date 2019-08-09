@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+.sidebar-nav>ul>li>a.active {
+    background: #212529;
+}
+
+.sidebar-nav ul li a.active,
+.sidebar-nav ul li a:hover {
+    color: #ffffff;
+}
