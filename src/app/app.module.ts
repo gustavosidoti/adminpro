@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -8,11 +9,17 @@ import { APP_ROUTES } from './app.routes';
 import { PagesModule } from './pages/pages.module';
 import {SharedModule} from './shared/shared.module';
 
+// Servicios
+import { ServiceModule } from './services/service.module';
 
 // Componentes principales
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+
+import { FormsModule } from '@angular/forms';
+
+
 
 
 /*import { HeaderComponent } from './shared/header/header.component';
@@ -25,6 +32,8 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
 import { ProgressComponent } from './pages/progress/progress.component';
 import { Graficas1Component } from './pages/graficas1/graficas1.component';   ESTOS SE ENCUENTRAN EN pages.module.ts SEPARADOS
 import { PagesComponent } from './pages/pages.component';
+import { SettingsService } from './services/settings.service';
+
 */
 
 
@@ -33,6 +42,7 @@ import { PagesComponent } from './pages/pages.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
+
 
    // DashboardComponent,
     //ProgressComponent, ESTOS SE ENCUENTRAN EN pages.module.ts SEPARADOS
@@ -49,7 +59,9 @@ import { PagesComponent } from './pages/pages.component';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

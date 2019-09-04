@@ -8,3 +8,7 @@
 .sidebar-nav ul li a:hover {
     color: #ffffff;
 }
+
+#themecolors a {
+    cursor: pointer;
+}
