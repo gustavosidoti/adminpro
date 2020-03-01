@@ -15,6 +15,16 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <script>
+        document.cookie = 'same-site-cookie=foo; SameSite=Lax';
+        document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
+    </script>
+
+    <!-- GOOGLE -->
+
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <meta name="google-signin-client_id" content="970187823155-hrv1ghlo83qfuc0lb2rbumjghtf1ht3h.apps.googleusercontent.com">
 </head>
 
 <body class="fix-header card-no-border fix-sidebar">
